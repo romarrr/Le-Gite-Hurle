@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Bold_Italic" ;
+    font-style: bold, italic;
+    src: url(Fonts/SegoeUIBoldItalic.woff);
+}
+  
+@font-face {
+    font-family: "bold";
+    font-style: bold;
+    src: url(Fonts/SegoeUIBold.woff);
+}
+  
+ @font-face {
+    font-family: "italic";
+    font-style: italic;
+    src: url(Fonts/SegoeUIItalic.woff);
+}
+  
+@font-face {
+    font-family: "ui";
+    src: url(Fonts/SegoeUI.woff);
+}
+
+/* Page Index.html */
+
+body {
+    font-family: "ui";
+}
+
+button {
+    background-color: #d8cc34;
+    border-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:black;
+}
+
+.entete {
+    height: 300px;
+    background-image: url(image/tetegite.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.legitehurle {  
+    font-size: 60px;
+    color: white;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    margin-left: 35px;
+    margin-top: 10px;
+    border: 5px solid white;
+    background-color: #f2b79f;
+    -moz-border-radius : 100px;
+    -webkit-border-radius : 100px;
+    border-radius : 100px;
+}
+
+.rond {
+    width : 200px; 
+    height : 200px;
+    margin-left: 100px;
+    
+}
+
+.cadreintro {
+    border-radius: 20px;
+}
+
+.cadrechambre { 
+    border-radius: 10px;
+    border: 3px solid #d8cc34;
+}
+
+.barre {
+    border-top: 3px solid #d8cc34;
+}
+
+.intro {
+    height: 150px;
+}
+
+.presentationdeschambres {
+    height: 1000px;
+}
+
+#chambre1, #chambre2, #chambre3 {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.presentationdesformules {
+    height: 1000px;
+    border-radius: 5%;
+    border: solid 3px #d8cc34;
+}
+
+.pieddepage {
+    background-color: #d8cc34;
+}
+
+/* Page reservation.html */
+
+.start {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#chb {
+    font-size:20px;
+}
+
+form {
+    font-size: 20px;    
+}
+
+.tarif {
+    font-size: 20px;   
+}
+
+.imgreservation {
+    width: 550px;
+    height: 350px;
+}
+
+/* Page carte.html */
+
+#carte {
+    width: 800px;
+}

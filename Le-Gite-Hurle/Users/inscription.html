@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Le Gite Hurle</title>
+
+</head>
+
+<body>
+    
+  <!-- Entete avec la barre de navigation, les boutons, le titre -->
+
+    <div class="entete container-fluid position-relative">
+
+      <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid col-5">
+
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/">Home</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/reservation.html">Réservation</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/carte.html">Carte</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/#footer">Contact</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/#chambre">Chambres</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/#formules">Formules</a></button>
+
+        </div>
+
+        <div class="container-fluid offset-5 col-2">
+
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/connexion.html">Se connecter</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/formulaire.html">S'inscrire</a></button>
+
+        </div>
+
+    </nav>
+    
+        <h1 class="legitehurle position-absolute top-50 start-50 translate-middle">Le Gite<img id="logo" src="img/logo.png" alt="logo"> Hurle</h1>
+
+    </div>
+ 
+    <!-- Une barre de séparation -->
+
+    <div class="barre mt-4 mb-5 offset-1 col-10"></div>
+
+<!-- Formule de connexion -->
+
+<form class="offset-1 col-10">
+
+    <div class="col-10 offset-sm-1">
+        <h4><button type="submit" class="btn-btn-primary">Connectez-vous</button> pour réserver en utilisant vos informations déjà enregistrées ou 
+        <button type="submit" class="btn-btn-primary">Inscrivez-vous</button> pour gérer vos réservations où que vous soyez !</h4>
+       
+      </div>
+        
+    <h5 class="text-center mt-5 mb-5 text-black fw-bold">Sinon veuillez saisir vos 
+        coordonnées pour finaliser votre réservation</h5>
+        <div class="container-fluid offset-2 col-10">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Prénom</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Nom</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="ex: petitjean@gmail.com">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">N°</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Téléphone Portable ou fixe">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="24, Rue de la marmotte">
+              </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ville</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Code Postal</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Pays</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choisir...</option>
+                <option>France</option>
+                <option>Allemagne</option>
+                <option>Andorre</option>
+                <option>Autriche</option>
+                <option>Belgique</option>
+                <option>Croatie</option>
+                <option>Danemark</option>
+                <option>Espagne</option>
+                <option>Finlande</option>
+                <option>Grèce</option>
+                <option>Hongrie</option>
+                <option>Irlande</option>
+                <option>Islande</option>
+                <option>Luxembourg</option>
+                <option>Monaco</option>
+                <option>Pologne</option>
+                <option>Portugal</option>
+                <option>Ukraine</option>
+
+              </select>
+            </div>
+
+            <div class="col-12 offset-sm-5">
+              <button type="submit" class="btn-btn-primary">Envoyer</button>
+            </div>
+          </form>
+ </div>
+    
+        
+        
+      </form>
+
+     <!-- Le footer avec l'adresse, contact -->
+
+     <div class="pieddepage mt-5 container-fluid position-relative">
+
+        <div class="row justify-content-between">
+  
+          <div class="col-3 text-center text-white pt-5">
+  
+            <h3>Le Gite Hurle</h3>
+            <p>-- Chambres et Gîtes --</p>
+  
+          </div>
+  
+          <div class="col-3 text-center text-white pt-2">
+  
+            <p>Martine et Jean-Luc</p>
+            <p>Le Gite Qui Hurle</p>
+            <p>3, Rue de l'Ancienne Auberge</p>
+            <p>48030 LOZERE</p>
+            <p>FRANCE</p>
+          
+          </div>
+  
+          <div class="col-3 text-center text-white pt-5">
+  
+            <p>Contact</p>
+            <p>04 67 98 09 78</p>
+            <p>gitequihurle@gmail.fr</p>
+          
+          </div>
+  
+        </div>
+            
+      </div>

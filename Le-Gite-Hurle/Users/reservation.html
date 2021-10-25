@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    
+    <title>Réservation</title>
+</head>
+<body>
+    
+    <div class="entete container-fluid position-relative">
+
+      <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid col-5">
+
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/">Home</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/reservation.html">Réservation</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/carte.html">Carte</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/#footer">Contact</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/#chambre">Chambres</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/#formules">Formules</a></button>
+
+        </div>
+
+        <div class="container-fluid offset-5 col-2">
+
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/connexion.html">Se connecter</a></button>
+          <button type="button"><a class="text-white text-decoration-none px-1" href="http://localhost:8080/formulaire.html">S'inscrire</a></button>
+
+        </div>
+
+      </nav>
+
+        <h1 class="legitehurle position-absolute top-50 start-50 translate-middle">Le Gite<img id="logo" src="img/logo.png"> Hurle</h1>
+
+    </div>
+ 
+    <!-- Une barre de séparation -->
+
+    <div class="barre mt-5 offset-3 col-6"></div>
+
+    <div class="reservation container-fluid offset-1 col-10">
+
+        <h1 class="text-center mb-5 mt-5 text-black fw-bold">Réservation</h1>
+
+    </div>
+
+    <!--Formulaire de reservation-->
+    <div id="formulaire" class="row offset-1">
+      
+      <div class="col-5">
+
+        <label class="start" for="start">Arrivée</label>
+        <input id="date" type="date" value="2017-06-01"> 
+        <label class="start" for="start">Départ</label>
+        <input id="date2" type="date" value="2017-06-01">
+        <label id="blocage" class="text-danger offset-1"></label>
+        
+        <p class="start">Nombres de personnes</p>
+        
+        <select id="personne" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+
+          <option value=1>1 personne</option>
+          <option value=2>2 personnes</option>
+          <option value=3>3 personnes</option>
+          <option value=4>4 personnes</option>
+          <option value=5>5 personnes</option>
+          <option value=6>6 personnes</option>
+          <option value=7>7 personnes</option>
+          <option value=8>8 personnes</option>
+          <option value=9>9 personnes</option>
+          <option value=10>10 personnes</option>
+          <option value=11>11 personnes</option>
+          <option value=12>12 personnes</option>
+          <option value=13>13 personnes</option>
+          <option value=14>14 personnes</option>
+          <option value=15>15 personnes</option>
+          <option value=16>16 personnes</option>
+          <option value=17>17 personnes</option>
+          <option value=18>18 personnes</option>
+          <option value=19>19 personnes</option>
+          <option value=20>20 personnes</option>
+        </select>
+          <p>Chambre souhaitée:</p>
+
+        <div>
+
+          <input type="radio" name="chambre" id="chambreduo" value=0>
+          <label id="chb">Chambres Duo : </label> 5 chambres duo pour 2 personnes<br>
+
+          <input type="radio" name="chambre" value=1>
+          <label id="chb">Chambre Familliale : </label> 3 Chambres Familiales ( 1 lit double + 1 lit superposé + 1 lit simple )<br>
+
+          <input type="radio" name="chambre" value=2>
+          <label id="chb">Appartement : </label> 2 Appartements ( 2 lits double + 2 lits superposés + 2 lits simples + cuisine )
+
+        </div>
+
+        <br>
+
+        <form class="formule">
+
+          <p>Formules Proposées:</p>
+          <input type="radio" name="formule" value=0> Aucune<br>
+          <input type="radio" id="weekend" name="formule" value=1> Formule Week-End d'Amour<br>
+          <div id="week" class="text-danger"></div>
+          <input type="radio" id="nature" name="formule" value=2> Formule Nature et Découverte<br>
+          <div id="nat" class="text-danger"></div>
+          <input type="radio" id="saison" name="formule" value=3> Formule Saisonnier
+          <div id="sai" class="text-danger"></div>
+
+        </form>
+
+        <div>
+          <p id="tarif"></p>
+
+        </div>
+        <div id="info">
+          <label class="align-middle" for="story">Demande d'informations complémentaires :</label>
+
+          <textarea id="story" name="story"
+           rows="5" cols="33">
+          </textarea>
+
+        </div>
+      </div>
+      <div class="offset-1 col-5 align-self-center">
+                
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/chambre1.png" class="imgreservation d-block w-100 h-100" alt="First Slide">
+            </div>
+            <div class="carousel-item">
+              <img src="img/chambre2.png" class="imgreservation d-block w-100 h-100" alt="Second Slide">
+            </div>
+            <div class="carousel-item">
+              <img src="img/chambre3.png" class="imgreservation d-block w-100 h-100" alt="Third Slide">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+    </div>
+    </div>
+    
+    <button id="suivant" class="offset-2 mt-5" onclick="tarif()"><a href="inscription.html">Réservez votre séjour</a></button>
+
+  
+        <!-- Le footer avec l'adresse, contact -->
+
+    <div id="footer" class="pieddepage mt-5 container-fluid position-relative">
+
+        <div class="row justify-content-between">
+  
+          <div class="col-3 text-center text-white pt-5">
+  
+            <h3>Le Gite Hurle</h3>
+            <p>-- Chambres et Gîtes --</p>
+  
+          </div>
+  
+          <div class="col-3 text-center text-white pt-2">
+  
+            <p>Martine et Jean-Luc</p>
+            <p>Le Gite Qui Hurle</p>
+            <p>3, Rue de l'Ancienne Auberge</p>
+            <p>48030 LOZERE</p>
+            <p>FRANCE</p>
+          
+          </div>
+  
+          <div class="col-3 text-center text-white pt-5">
+  
+            <p>Contact</p>
+            <p>04 67 98 09 78</p>
+            <p>gitequihurle@gmail.fr</p>
+          
+          </div>
+  
+        </div>
+            
+      </div>
+      <script src="script.js">
+
+      </script>
+</body>
+</html>

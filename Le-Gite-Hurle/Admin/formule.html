@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Le Gîte Hurle - Formule</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Le Gîte Hurle</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Reservation</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="chambre.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Chambre</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item active">
+                <a class="nav-link" href="formule.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Formule</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+           
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+<main id="page">
+
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="titredash h3 mb-0 text-gray-800">Formule</h1>
+                        <button class="buttonAjout btn btn-primary" onclick=" ajoutFormule()">Ajoutez une Formule</button>
+                    </div>
+
+                    <div id="div1" class=" container-fluid offset-2 col-8 ">
+
+                        <div id="div2" class="offset-2 col-8">
+                  
+                          <h2 class="text-center mt-5 mb-5 text-black fw-bold">Nos Formules :</h2>
+                          <!-- Formule 1 -->
+                  <div id="formule1" class="mainAllService">
+                          <h4 id="titreForm1" class="fw-bold text-center mt-5 mb-5 pt-2">Formules "Week-End D'Amour"</h4>
+                  
+                          <p id="paraForm1" class="text-center">La Formule "Week-End D'Amour" applique une réduction de 10% sur le nombre total de nuitées avec petit-déjeuner " love " servi au lit.</p>
+                         
+                        
+                         <!-- Formule 1 -->
+                        <div class="row">
+                            <div class="col-5"><button class="btnAdminStyle btn btn-primary offset-2 bttpop" onclick="suppFormule('formule1')">Supprimer</button></div>
+                            <div class="col-5"><button data-bs-toggle="modal" data-bs-target="#exampleModal" typ="button" class="btn btn-primary bttpop" id="modchamb1" data-bs-whatever="@getbootstrap"  onclick="tamere('titreForm1', 'paraForm1')">Modifier</button></div>
+                          </div>    
+                    </div>
+
+
+ <!-- Formule 2 -->
+                  <div id="formule2" class="mainAllService">
+                          <h4 id="titreForm2" class="fw-bold text-center mt-5 mb-5 pt-2">Formules "Nature et Découverte"</h4>
+                  
+                          <p id="paraForm2" class="text-center">La Formule "Nature et Découverte" est proposée pour tous les types d'espaces lorsque le nombre de nuitées est supérieur à 5 jours ( week-end compris ). Elle applique une réduction de 5% sur la totalité du séjour. Elle propose en outren une escapade "rahan" en terre du Gévaudan ( le coutelas est fourni ).</p>
+                          
+                         
+                        <div class="row">
+                            <div class="col-5"><button class="btnAdminStyle btn btn-primary offset-2 bttpop" onclick="suppFormule('formule2')">Supprimer</button></div>
+                            <div class="col-5"><button data-bs-toggle="modal" data-bs-target="#exampleModal" typ="button" class="btn btn-primary bttpop" id="modchamb1" data-bs-whatever="@getbootstrap" onclick="tamere('titreForm2', 'paraForm2')">Modifier</button></div>
+                          </div>
+                        </div> 
+<!-- Formule 2 -->
+
+
+ <!-- Formule 3 -->
+                  <div id="formule3" class="mainAllService">
+                          <h4 id="titreForm3" class="fw-bold text-center mt-5 mb-5 pt-2">Formules "Saisonnier"</h4>
+                  
+                          <p id="paraForm3" class="text-center">La Formule "travail saisonnier" applique une de réduction de 20% sur la totalité du séjour (non majorée) pour tous les types d'epaces avec une réservation de 1 mois minimum pour le périodes de juin à aout (inclus) et de décembre à mras (inclus).</p>
+                          <div class="row">
+                            <div class="col-5"><button class="btnAdminStyle btn btn-primary offset-2 bttpop" onclick="suppFormule('formule3')">Supprimer</button></div>
+                            <div class="col-5"><button data-bs-toggle="modal" data-bs-target="#exampleModal" typ="button" class="btn btn-primary bttpop" id="modchamb1" data-bs-whatever="@getbootstrap" onclick="tamere('titreForm3', 'paraForm3')">Modifier</button></div>
+                        </div>
+                  </div>    
+
+                   <!-- Formule 3 -->
+                   <div class="modal fade contenus" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Titre :</label>
+                              <input type="text" class="form-control" id="customTitre">
+                            </div>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Description :</label>
+                              <input type="text" class="form-control" id="customType">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button id="popupG" type="button" class="btn btn-primary" onclick="changeForm(id)" data-bs-dismiss="modal">Soumettre</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                      
+                        </div>
+                        
+                      </div>
+                    </main>
+                  
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Le Gîte Hurle</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
